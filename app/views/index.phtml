@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><?= $config->AppConfig->app_title ?></title>
+		<?= add_css(array('colors.css'), true, 'css'); ?>
+    </head>
+    <body>
+        <div class="container">
+            <?php
+				include_once(APP_PATH . '/views/index/index.phtml');
+			?>
+        </div>
+        <?= add_js('refresh_confirm_dlg_disabler.js', true, 'js'); ?>
+    </body>
+</html>
